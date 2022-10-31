@@ -2,6 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@playwright/test': ^1.25.0
+  '@prismicio/client': ^6.7.1
+  '@prismicio/helpers': ^2.3.5
+  '@prismicio/types': ^0.2.3
   '@sveltejs/adapter-auto': next
   '@sveltejs/kit': next
   '@typescript-eslint/eslint-plugin': ^5.27.0
@@ -18,8 +21,13 @@ specifiers:
   typescript: ^4.7.4
   vite: ^3.1.0
 
+dependencies:
+  '@prismicio/client': 6.7.1
+  '@prismicio/helpers': 2.3.5
+
 devDependencies:
   '@playwright/test': 1.27.1
+  '@prismicio/types': 0.2.3
   '@sveltejs/adapter-auto': 1.0.0-next.85
   '@sveltejs/kit': 1.0.0-next.528_svelte@3.52.0+vite@3.2.1
   '@typescript-eslint/eslint-plugin': 5.41.0_huremdigmcnkianavgfk3x6iou
@@ -168,6 +176,35 @@ packages:
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
+
+  /@prismicio/client/6.7.1:
+    resolution: {integrity: sha512-XIFSZtLjxnpQavu2R7jIqmnFvUqRRzHwjXHt/fb0N550rFLQM4tnwDuSR3VY6k/TG+M5zvH+PHJuXGNnv73qUQ==}
+    engines: {node: '>=12.13.0'}
+    dependencies:
+      '@prismicio/helpers': 2.3.5
+      '@prismicio/types': 0.2.3
+    dev: false
+
+  /@prismicio/helpers/2.3.5:
+    resolution: {integrity: sha512-lL9TQG+GKtOATvLOlTFoaDfEZOgrNXHRuD+TxCSwLPKRBtYVs6zBoU6SkkcISm/DCe8PwGD0zo44zDdPtFJuBA==}
+    engines: {node: '>=12.7.0'}
+    dependencies:
+      '@prismicio/richtext': 2.1.1
+      '@prismicio/types': 0.2.3
+      escape-html: 1.0.3
+      imgix-url-builder: 0.0.3
+    dev: false
+
+  /@prismicio/richtext/2.1.1:
+    resolution: {integrity: sha512-/99JR2NUU2WV0025eAIqjd9OnF4ITaM57SVuhLc1XBUgnJe0HZrC9f24YKVW43jFR5HYTJtLgz01WjEddymqmA==}
+    engines: {node: '>=12.7.0'}
+    dependencies:
+      '@prismicio/types': 0.2.3
+    dev: false
+
+  /@prismicio/types/0.2.3:
+    resolution: {integrity: sha512-mHsZ9ora8He6PAn+Q/0MCVdlfc0Xv8rSEYJyfwywDApuvssGvgUbeHE6XTqPhK2dJwb0mAkJzCpZiQJRt9+bvw==}
+    engines: {node: '>=12.7.0'}
 
   /@sveltejs/adapter-auto/1.0.0-next.85:
     resolution: {integrity: sha512-lyByWPm7nYVACRfGuz68Xwfu/zU1THhKJSEXzFXW4cFsYxEGRkUOqzPX+xzwXMvFSLz68yu4dcodo1HlNrHWtA==}
@@ -893,6 +930,10 @@ packages:
       esbuild-windows-arm64: 0.15.12
     dev: true
 
+  /escape-html/1.0.3:
+    resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
+    dev: false
+
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
@@ -1242,6 +1283,11 @@ packages:
     resolution: {integrity: sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==}
     engines: {node: '>= 4'}
     dev: true
+
+  /imgix-url-builder/0.0.3:
+    resolution: {integrity: sha512-8Oc2Cn4+jF06sEfJcVPlWYfD2F6RjrwIMbk1xEzux8unoB5LsvFc/GL1BQ47HPaeE12ReX2nMUcjUslGYWLxHA==}
+    engines: {node: '>=12.7.0'}
+    dev: false
 
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
