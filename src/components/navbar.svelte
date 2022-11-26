@@ -45,9 +45,9 @@
 			top: 100px;
 			background: #1e1e1e;
 			border-bottom: solid 1px #1e1e1e;
-			width: 100%;
 			overflow: hidden;
 			padding: 10px 30px;
+			width: -webkit-fill-available;
 		}
 	}
 

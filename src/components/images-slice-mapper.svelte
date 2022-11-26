@@ -1,6 +1,5 @@
 <script lang="typescript">
 	import type { ImagesSliceItem } from '$types/page-document';
-	import { onMount } from 'svelte';
 	import ImageWithText from './image-with-text.svelte';
 
 	export let items: ImagesSliceItem[];
