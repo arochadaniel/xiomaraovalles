@@ -19,7 +19,7 @@
 		</Typewriter>
 		<h2>{data.page.data.description}</h2>
 	</header>
-	<div id="slice-container">
+	<div id="slices-container">
 		{#each data.page.data.body as slice}
 			<ImagesSliceMapper
 				title={slice.primary.images_title}
@@ -51,7 +51,10 @@
 		font-weight: 400;
 	}
 
-	#slice-container {
-		padding: 60px 30px;
+	#slices-container {
+		padding: 40px 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
 	}
 </style>

@@ -30,7 +30,7 @@
 <style>
 	@media screen and (max-width: 1200px) {
 		.desktop {
-			display: none;
+			display: none !important;
 		}
 
 		.mobile {
@@ -49,6 +49,12 @@
 			padding: 10px 30px;
 			width: -webkit-fill-available;
 		}
+	}
+
+	.desktop {
+		display: flex;
+		gap: 1.5rem;
+		align-items: center;
 	}
 
 	.mobileMenu {
