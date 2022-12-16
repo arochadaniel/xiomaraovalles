@@ -1,6 +1,9 @@
 <script lang="typescript">
-	import NavbarLinks from '$components/navbar-links.svelte';
 	import Navbar from '$components/navbar.svelte';
+
+	export const ssr = false;
+	export const prerender = true;
+
 	import type { PrismicDocument } from '@prismicio/types';
 	export let data: { pages: PrismicDocument<{ title: string }>[] };
 </script>
